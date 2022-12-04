@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script>
+      let output = ''
+
+      for (let i = 0; i < 6; i++) {
+        for (let k = 0; k < i; k++) {
+          output += ' '
+        }  
+        // 횟수에 숫자 표현식 올 수 있음(!!!)
+        for (let j = 0; j < 2 * i + 1; j++) {
+          output += '*' 
+        }
+        output += '\n'
+      }
+
+      console.log(output)
+
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

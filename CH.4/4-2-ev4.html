@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>문제 4</title>
+  <script>
+    // 처음에는 조금 어려울 수 있겠지만, 활용 예제의 피라미드를 활용해서 다음과 같은 피라미드를 만들어 보세요.
+
+    // 변수를 선언합니다.
+    let output = ''
+    const size = 5
+
+    // 반복합니다.
+    for (let i = 0; i < 5; i++) {
+      for (let k = 0; k < 5 - i; k++) {
+        output += ' '       
+      }     
+      for (let j = 0; j < (2 * i + 1); j++) {
+        output += '*'
+      }
+        output += '\n'
+    }
+    for (let i = 0; i < 6; i++) {
+      for (let k = 0; k < i; k++) {
+        output += ' '       
+      }     
+      for (let j = 0; j < 2 * (5 - i) + 1; j++) {
+        output += '*'
+      }
+        output += '\n'
+    }
+       
+
+    // 출력합니다.
+    console.log(output)
+  </script>
+</head>
+</html>
