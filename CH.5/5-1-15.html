@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>전개 연산자가 없던 구 버전에서 apply() 함수 사용하기</title>
+    <script>
+      // 단순히게 매개변수를 모두 출력하는 함수
+      function sample(...items) {
+        console.log(items)
+      }
+
+      // 전개 연산자 사용 여부 비교하기
+      const array = [1, 2, 3, 4]
+      console.log(sample.apply(null, array))
+    </script>
+</head>
+</html>

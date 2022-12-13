@@ -9,24 +9,25 @@
     const size = 5
 
     // 반복합니다.
-    for (let i = 0; i < 5; i++) {
-      for (let k = 0; k < 5 - i; k++) {
-        output += ' '       
-      }     
-      for (let j = 0; j < (2 * i + 1); j++) {
+    for (let i = 0; i < size; i++) {
+      for(let k = size; k > i; k--) {
+        output += ' '
+      }
+      for (let j = 0; j < 2 * i - 1; j++) {
         output += '*'
       }
-        output += '\n'
+      output += '\n'    
     }
-    for (let i = 0; i < 6; i++) {
-      for (let k = 0; k < i; k++) {
-        output += ' '       
-      }     
-      for (let j = 0; j < 2 * (5 - i) + 1; j++) {
+    for (let i = size; i > 0; i--) {
+      for(let k = size; k > i; k--) {
+        output += ' '
+      }
+      for (let j = 0; j < 2 * i - 1; j++) {
         output += '*'
       }
-        output += '\n'
+      output += '\n'    
     }
+    
        
 
     // 출력합니다.
